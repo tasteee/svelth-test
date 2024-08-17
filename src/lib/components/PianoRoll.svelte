@@ -26,13 +26,12 @@
 		const isSharp = noteHelper.checkIfNoteIsSharp(keyNote)
 		const isInChord = notes.includes(keyNote)
 		if (!isInChord) return isSharp ? theme.black : theme.white
-		return theme.base7
+		return theme.accentDark
 	}
 </script>
 
 <!-- [3.48, 0.15, 1] -->
 <Pane
-	color="white"
 	castShadow={true}
 	receiveShadow={true}
 	width={3.5}
@@ -40,7 +39,7 @@
 	depth={1}
 	positionY={-1.39}
 	positionX={-1.97}
-	positionZ={-0.075}
+	positionZ={0.05}
 	rotationTurn={0}
 	rotationLean={0}
 	rotationTilt={0}
@@ -66,7 +65,9 @@
 		>
 			<T.BoxGeometry />
 			<T.MeshToonMaterial color={getKeyColor(keyNote)} />
-			<Edges color={theme.white} />
+			<Edges color={notes.includes(keyNote) ? theme.black : theme.white} />
 		</T.Mesh>
 	{/each}
+
+	<!-- <T.PointLight color={theme.white} intensity={20} position={[0.25, 5, -0.25]} /> -->
 </Pane>

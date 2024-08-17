@@ -1,10 +1,8 @@
 export const theme = {
 	darkGreen: '#25402c',
 	eggWhite: '#f9f5ec',
-
 	black: '#0D0B09',
-	white: '#ffffff',
-
+	white: '#fdfaf8',
 	base0: '#0D0B09',
 	base1: '#141110',
 	base2: '#1C1917',
@@ -18,13 +16,13 @@ export const theme = {
 	base10: '#AE8C7E',
 	base11: '#D4B3A5',
 	base12: '#EDE0D9',
-
-	accent: '#FFC857',
+	accent: '#57ff5d',
+	accentDark: '#1eb16a',
 	accent2: '#DB3069'
-};
+}
 
 export const fonts = [
 	'/fonts/NewSpiritBold.json',
 	'/fonts/AreaNormalRegular.json',
 	'/fonts/InputMonoRegular.json'
-];
+]
